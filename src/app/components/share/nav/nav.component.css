@@ -1,0 +1,63 @@
+/* Nav */
+:root {
+    --color-primario: #4CBE23;
+    --color-secundario: #f58a07;
+    --color--pbase: #9de682;
+
+}
+.menu {
+    background-color:#4CBE23 !important;
+    color: white;
+
+}
+.canasta {
+    color: rgb(248, 248, 248);
+    font-size: 2em;
+
+}
+.menud {
+    background-color: #9de682 !important;
+}
+
+.t-color {
+    color: white !important;
+}
+
+.t-color:hover {
+    color: #16181b !important;
+
+}
+/* Modal */
+.contenedor-loginModal{
+    background-color: #F5F3E0!important;
+}
+.boton-login{
+    border: 1px solid #F58A07!important;
+    color: #F58A07!important;
+    box-shadow: 0 2px #f58a0798;
+}
+.boton-login a{
+    color: #F58A07
+}
+.boton-login a:hover{
+    text-decoration: none;
+    color: #ffffff!important;
+}
+.boton-login:hover{
+    background-color: #F58A07!important;
+}
+.boton-login:active {
+    transform: translateY(3px);
+}
+.boton-ingresar-login{
+    background-color: #F58A07!important;
+    color: #ffffff!important;
+}
+.boton-ingresar-login:active {
+    transform: translateY(4px);
+}
+@media screen and (min-width:992px) {
+    .mov {
+        order: 2;
+    }
+}

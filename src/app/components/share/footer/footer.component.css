@@ -1,0 +1,13 @@
+.footer {
+    height: 100px;
+}
+
+.icon {
+    color: #f58a07;
+    font-size: 1.8em;
+    padding: 0px;
+}
+
+.icon:hover {
+    transform: scale(1.2, 1.2);
+}
