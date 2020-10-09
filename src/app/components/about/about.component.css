@@ -1,0 +1,30 @@
+.jumbotron{
+    background-image: url("../../../assets/img/katherine-chase-4MMK78S7eyk-unsplash.png");
+    background-size: cover;
+    height: 60vh;
+    opacity: 1;
+}
+.banner1{
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+}
+#bonito {
+    position:relative;
+    height:450px;
+    max-width:50vw;
+    margin:0 auto;
+  }
+  
+  #bonito img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+
+  #bonito img.top:hover {
+    opacity:0;
+  }

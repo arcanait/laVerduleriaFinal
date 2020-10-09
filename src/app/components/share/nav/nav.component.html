@@ -1,6 +1,6 @@
 <header class="navbar navbar-light bg-light justify-content-end">
     <form class="form-inline ">
-        <button class=" btn boton-login mx-2" type="button">Registrate</button>
+        <button class=" btn boton-login mx-2" type="button"><a  href="./assets/pages/registro.html">Registrate</a></button>
         <button type="button" class="btn boton-login" data-toggle="modal" data-target="#modalLogin">
             Ingresar
         </button>
@@ -8,45 +8,164 @@
 </header>
 <nav class="menu navbar navbar-expand-lg navbar-dark ">
 
-    <a class="navbar-brand ml-3" href="#"><img class="w-sm-75" src="../../../../assets/img/LogoB.png" alt=""></a>
+    <a class="navbar-brand ml-3" href="./index.html"><img class="w-sm-75" src="./assets/img/LogoB.png" alt=""></a>
     <div class="mov">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown "
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <i class="fas fa-shopping-basket canasta mx-3"></i>
+        <!-- <a href="./assets/pages/canasta.html"><i class="fas fa-shopping-basket canasta mx-3"></i></a> -->
+        <i class="fas fa-shopping-basket canasta mx-3" data-toggle="modal" data-target="#ModalC"></i>
 
+        <!-- Modal -->
+        <div class="modal fade" id="ModalC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header ColorP text-light">
+                        <h5 class="modal-title h3 " id="exampleModalLabel">Tu Canasta</h5>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+    
+                    </div>
+                    <div class="modal-body">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="../../../../assets/img/tomate.jpg" class=" card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <button type="button" class="close m-1">
+                                        <span>&times;</span>
+                                    </button>
+                                    <div class="card-body">
+    
+                                        <h5 class="card-title text-dark" >Tomate</h5>
+    
+                                        <div class="d-flex align-items-center justify-content-between">
+    
+                                            <label for="cant0" class="text-dark">Cantidad</label>
+                                            <div class="d-flex align-items-center">
+                                                <button class="btn boton-ingresar-login py-0" type="button">-</button>
+                                                <input class="cantidades text-center mx-1" id="cant0" type="text"
+                                                    placeholder="5">
+                                                <button class="btn boton-ingresar-login py-0" type="button">+</button>
+                                            </div>
+    
+                                        </div>
+                                        <div class="d-flex justify-content-between m-1">
+                                            <p class="card-text text-dark">precio </p>
+                                            <p class="h4 mr-4 text-dark"> $ 1500</p>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="../../../../assets/img/piña.jpg" class="card-img " alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <button type="button" class="close  m-1">
+                                        <span>&times;</span>
+                                    </button>
+                                    <div class="card-body">
+    
+                                        <h5 class="card-title text-dark" >Piña</h5>
+    
+                                        <div class="d-flex align-items-center justify-content-between">
+    
+                                            <label for="cant1" class="text-dark">Cantidad</label>
+                                            <div class="d-flex align-items-center">
+                                                <button class="btn boton-ingresar-login py-0" type="button">-</button>
+                                                <input class="cantidades text-center mx-1" id="cant1" type="text"
+                                                    placeholder="2">
+                                                <button class="btn boton-ingresar-login py-0" type="button">+</button>
+                                            </div>
+    
+                                        </div>
+                                        <div class="d-flex justify-content-between m-1">
+                                            <p class="card-text text-dark">precio </p>
+                                            <p class="h4 mr-4 text-dark"> $ 3100</p>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="../../../../assets/img/hierbabuena.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <button type="button" class="close  m-1">
+                                        <span>&times;</span>
+                                    </button>
+                                    <div class="card-body">
+    
+                                        <h5 class="card-title text-dark">Hierba buena</h5>
+    
+                                        <div class="d-flex align-items-center justify-content-between">
+    
+                                            <label for="cant2" class="text-dark">Cantidad</label>
+                                            <div class="d-flex align-items-center">
+                                                <button class="btn boton-ingresar-login py-0" type="button">-</button>
+                                                <input class="cantidades text-center mx-1" id="cant2" type="text"
+                                                    placeholder="7">
+                                                <button class="btn boton-ingresar-login py-0" type="button">+</button>
+                                            </div>
+    
+                                        </div>
+                                        <div class="d-flex justify-content-between m-1">
+                                            <p class="card-text text-dark">precio </p>
+                                            <p class="h4 mr-4 text-dark"> $3500 </p>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn  ColorP  btn-secondary">pagar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
     <div class="collapse navbar-collapse justify-content-end  mr-4" id="navbarNavDropdown">
         <ul class="navbar-nav ">
             <li class="nav-item active">
-                <a class="nav-link" href="#"> Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./index.html"> Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="dashboard"> Administración <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="profile"> Perfil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
+                <a class="nav-link dropdown-toggle " href="./assets/pages/shop.html" id="navbarDropdownMenuLink" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Productos
                 </a>
                 <div class=" menud dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item t-color" href="#">Verduras</a>
-                    <a class="dropdown-item t-color" href="#">Frutas</a>
-                    <a class="dropdown-item t-color" href="#">hierbas</a>
+                    <a class="dropdown-item t-color" href="./assets/pages/shop.html">Verduras</a>
+                    <a class="dropdown-item t-color" href="./assets/pages/shop.html">Frutas</a>
+                    <a class="dropdown-item t-color" href="./assets/pages/shop.html">hierbas</a>
                 </div>
             </li>
-
             <li class="nav-item">
-                <a class="nav-link" href="#">Contactanos</a>
+                <a class="nav-link" routerLink="about">Contactanos</a>
             </li>
-
         </ul>
-
     </div>
-
 </nav>
-
-
-
 <div class="modal fade " id="modalLogin" tabindex="-1" aria-labelledby="login" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content contenedor-loginModal">

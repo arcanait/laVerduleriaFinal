@@ -56,6 +56,20 @@
 .boton-ingresar-login:active {
     transform: translateY(4px);
 }
+.cantidades {
+    width: 35px;
+    height: 35px;
+}
+.card-img {
+    height: 160px;
+    object-fit: cover;
+}
+.ColorP {
+    background-color: #4CBE23!important;
+}
+.cant2{
+    color: #343a40!important;
+}
 @media screen and (min-width:992px) {
     .mov {
         order: 2;
