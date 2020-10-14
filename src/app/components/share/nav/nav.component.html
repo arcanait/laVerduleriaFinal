@@ -1,6 +1,6 @@
 <header class="navbar navbar-light bg-light justify-content-end">
     <form class="form-inline ">
-        <button class=" btn boton-login mx-2" type="button"><a  href="./assets/pages/registro.html">Registrate</a></button>
+        <button class=" btn boton-login mx-2" type="button"><a routerLink="registry">Registrate</a></button>
         <button type="button" class="btn boton-login" data-toggle="modal" data-target="#modalLogin">
             Ingresar
         </button>
@@ -149,18 +149,10 @@
             <li class="nav-item active">
                 <a class="nav-link" routerLink="profile"> Perfil <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle " href="./assets/pages/shop.html" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Productos
-                </a>
-                <div class=" menud dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item t-color" href="./assets/pages/shop.html">Verduras</a>
-                    <a class="dropdown-item t-color" href="./assets/pages/shop.html">Frutas</a>
-                    <a class="dropdown-item t-color" href="./assets/pages/shop.html">hierbas</a>
-                </div>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="shop">Productos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" routerLink="about">Contactanos</a>
             </li>
         </ul>

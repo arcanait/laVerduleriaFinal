@@ -1,0 +1,30 @@
+main{
+    height: 700px;
+}
+.contenedor-registro{
+    background-color: #F5F3E0;
+    margin-top: 5%!important;
+    padding: 30px!important;
+    padding-top: 15px!important;
+    width: 700px!important;
+}
+.encabezado-card{
+    background-color: #f58a07!important;
+    color: #ffffff;
+}
+.boton-registrarse{
+    background-color: #f58a07!important;
+}
+.boton-registrarse a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.boton-registrarse a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.custom-card {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}

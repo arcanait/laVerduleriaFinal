@@ -1,0 +1,23 @@
+.jumbotron{
+    background-image: url("../../../assets/img/alexander-schimmeck-ks5flsI1mNo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+
+}
+.card-img-top{
+    opacity: 0.8;
+}
+.card-img-top:hover{
+    opacity: 1.0;
+}
+.fas{
+    color:#F58A07 !important; 
+}
+hr{
+    width: 80%;
+    border: 1px solid #F58A07 !important; 
+}
+.icono-carrito:hover{
+    color: #ffffff!important;
+}
