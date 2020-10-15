@@ -3,6 +3,17 @@
     background-size: cover;
     height: 60vh;
     opacity: 1;
+    position: relative;
+}
+.fondo{
+  background-color: #fff;
+  opacity: 0.5;
+  position: absolute;
+  top: auto;
+  left: 50%;
+}
+.texto{
+  padding-top: 50px !important;
 }
 .banner1{
     position: relative;
@@ -15,8 +26,7 @@
     max-width:50vw;
     margin:0 auto;
   }
-  
-  #bonito img {
+#bonito img {
     position:absolute;
     left:0;
     -webkit-transition: opacity 1s ease-in-out;
@@ -28,3 +38,4 @@
   #bonito img.top:hover {
     opacity:0;
   }
+
