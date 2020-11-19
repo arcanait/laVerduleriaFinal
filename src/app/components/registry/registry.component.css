@@ -28,3 +28,10 @@ main{
     margin: 0 auto;
     margin-top: 20px;
 }
+.mensaje-alerta{
+    color: red;
+}
+.alert-input:focus{
+    border: 1px solid red;
+    box-shadow: none;
+}

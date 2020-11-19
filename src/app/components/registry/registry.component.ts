@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router'
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-registry',
@@ -7,9 +10,48 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistryComponent implements OnInit {
 
-  constructor() { }
+  registroCliente = new FormGroup({
+    nombres: new FormControl('', [Validators.required]),
+    apellidos: new FormControl('', [Validators.required]),
+    correo: new FormControl('', [Validators.required]),
+    pass: new FormControl('', [Validators.required]),
+    terminos: new FormControl(false, [Validators.required])
+  })
+
+  registroProveedor = new FormGroup({
+    nombres: new FormControl('', [Validators.required]),
+    apellidos: new FormControl('', [Validators.required]),
+    telefono: new FormControl('', [Validators.required]),
+    direccion: new FormControl('', [Validators.required]),
+    municipio: new FormControl('', [Validators.required]),
+    departamento: new FormControl('', [Validators.required]),
+    correo: new FormControl('', [Validators.required]),
+    pass: new FormControl('', [Validators.required]),
+    terminos: new FormControl(false, [Validators.required])
+  })
+
+  constructor(private auth: AuthService, private router: Router) { }
 
   ngOnInit(): void {
   }
+
+  registrarCliente(){
+    this.auth.registroUsuarioCliente(this.registroCliente.value).subscribe(
+      response => {
+        console.log(response)
+        this.router.navigate(['/shop'])
+      },
+      error => console.log(error)
+    )
+  }
+
+  registrarProveedor(){
+    this.auth.registroUsuarioProveedor(this.registroProveedor.value).subscribe(
+      response => {
+        console.log(response)
+        this.router.navigate(['/shop'])
+      },
+      error => console.log(error)
+    )  }
 
 }
